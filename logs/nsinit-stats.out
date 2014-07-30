@@ -1,0 +1,82 @@
+{
+	"network_stats": {
+		"rx_bytes": 180568,
+		"rx_packets": 89,
+		"tx_bytes": 28316,
+		"tx_packets": 92
+	},
+	"cgroup_stats": {
+		"cpu_stats": {
+			"cpu_usage": {
+				"total_usage": 985559718,
+				"percpu_usage": [
+					43613750,
+					79789656,
+					132486590,
+					78759739,
+					49063680,
+					60703059,
+					36277458,
+					35919550,
+					36329424,
+					20096103,
+					8148695,
+					25279255,
+					0,
+					0,
+					0,
+					6144761,
+					14814784,
+					2612915,
+					95162480,
+					33853872,
+					114861235,
+					71115914,
+					6533416,
+					33993382
+				],
+				"usage_in_kernelmode": 510000000,
+				"usage_in_usermode": 440000000
+			},
+			"throlling_data": {}
+		},
+		"memory_stats": {
+			"usage": 27992064,
+			"max_usage": 29020160,
+			"stats": {
+				"active_anon": 4411392,
+				"active_file": 3149824,
+				"cache": 22278144,
+				"hierarchical_memory_limit": 9223372036854775807,
+				"hierarchical_memsw_limit": 9223372036854775807,
+				"inactive_anon": 0,
+				"inactive_file": 19128320,
+				"mapped_file": 3723264,
+				"pgfault": 94783,
+				"pgmajfault": 25,
+				"pgpgin": 19919,
+				"pgpgout": 13902,
+				"rss": 4460544,
+				"rss_huge": 2097152,
+				"swap": 0,
+				"total_active_anon": 4411392,
+				"total_active_file": 3149824,
+				"total_cache": 22278144,
+				"total_inactive_anon": 0,
+				"total_inactive_file": 19128320,
+				"total_mapped_file": 3723264,
+				"total_pgfault": 94783,
+				"total_pgmajfault": 25,
+				"total_pgpgin": 19919,
+				"total_pgpgout": 13902,
+				"total_rss": 4460544,
+				"total_rss_huge": 2097152,
+				"total_swap": 0,
+				"total_unevictable": 0,
+				"unevictable": 0
+			},
+			"failcnt": 0
+		},
+		"blkio_stats": {}
+	}
+}

@@ -1,0 +1,19 @@
+Until something like PR5910 lands, you have to set SELinux permissions manually.
+
+There are 2 options with varying levels of security.
+
+1) Set svirt_sandbox_file_t context on the volume directory on your Docker host.
+   - This will allow any container to read/write to that directory.
+
+ # chcon -Rt svirt_sandbox_file_t /results
+
+2) Each time a container is created, it is allocated unique SELinux MCS labels.
+  - Since this is dynamically generated at docker run time, you cannot label the host directory properly until after the container is created.
+  - This is the most secure method since no other containers will be able to access this directory.
+  - To determine the label:
+
+ # sudo docker run -v /results ...
+ # cat /etc/hostname
+ 2bf50285b249
+ chcon -Rt svirt_sandbox_file_t /results
+ # chcon --reference /var/lib/docker/devicemapper/mnt/2bf50285b249d1513c5481a992b12495fc8e8e0d3fdf2b2345b760c5fd675db1 /results
