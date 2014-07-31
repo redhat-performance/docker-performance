@@ -2,7 +2,7 @@ docker-performance
 ==================
 
 Repository to accompany https://slides.com/jeremyeder/docker-performance-analysis
-
+```
 # git clone https://github.com/jeremyeder/docker-performance.git
 # docker build -t c7perf --rm=true - < /root/docker-performance/Dockerfiles/Dockerfile_c7perf
 # docker images
@@ -20,3 +20,4 @@ centos              centos7             1a7dc42f78ba        2 weeks ago         
 # cat /etc/hostname
 2bf50285b249
 # chcon --reference /var/lib/docker/devicemapper/mnt/2bf50285b249d1513c5481a992b12495fc8e8e0d3fdf2b2345b760c5fd675db1 /results
+```
