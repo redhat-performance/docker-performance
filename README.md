@@ -1,7 +1,7 @@
 docker-performance
 ==================
 
-Repository to accompany https://slides.com/jeremyeder/docker-performance-analysis
+Repository to accompany http://redhat.slides.com/jeremyeder/performance-analysis-of-docker#/
 ```
 # git clone https://github.com/jeremyeder/docker-performance.git
 # docker build -t c7perf --rm=true - < /root/docker-performance/Dockerfiles/Dockerfile_c7perf
